@@ -1,11 +1,26 @@
-//@import "fonts/asciidoctor";
-@import "settings/asciidoctor";
+@import "fonts/asciidoctor";
+@import "settings/history";
 @import "components/asciidoc";
 @import "components/awesome-icons";
+
+#header {
+  h1 {
+    font-size: 3.5em;
+  }
+  .author {
+    font-size: 1em;
+  }
+}
 
 .quoteblock blockquote::before {
   content: '';
   display: none;
+}
+
+.quoteblock {
+  blockquote {
+    color: $body-font-color;
+  }
 }
 
 .quoteblock.epigraph {

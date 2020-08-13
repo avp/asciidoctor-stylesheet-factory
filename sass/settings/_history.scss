@@ -19,14 +19,14 @@
 // Body (IMPORTANT $body-* variables must be defined above the defaults import)
 
 $body-bg: white;
-$body-font-color: rgba(0,0,0,0.8);
+$body-font-color: black;
 $body-font-family: "Noto Serif", "DejaVu Serif", serif;
 
 @import "defaults";
 
 // Default Overrides
 
-$primary-color: #654321;
+$primary-color: darken(#2561ba, 5%);
 $alert-color: lighten(#3a120c, 15%); // $code-color is 15% darker than $alert-color, so we lighten here by 15%
 $global-radius: 4px;
 $panel-bg: #f8f8f7;
@@ -34,13 +34,13 @@ $panel-font-color: rgba(0,0,0,0.75);
 
 // Headings
 
-$header-font-family: "Open Sans", "DejaVu Sans", sans-serif;
+$header-font-family: "Noto Serif", "Georgia", serif;
 $header-font-weight: 300;
-$header-font-color: #654321;
-$header-line-height: 1.2;
+$header-font-color: #050;
+$header-line-height: 1.8;
 $header-top-margin: 1em;
 $header-word-spacing: -0.05em;
-$title-font-color: lighten(#654321, 5%);
+$title-font-color: $header-font-color;
 $title-font-weight: $header-font-weight;
 $subheader-font-family: $body-font-family;
 $subheader-font-size: 1rem;
