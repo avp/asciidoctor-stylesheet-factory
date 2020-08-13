@@ -97,7 +97,7 @@ $definition-list-margin-bottom: emCalc(20px);
 
 // Blockquotes
 
-$blockquote-font-color: $title-font-color;
+$blockquote-font-color: fade-out($body-font-color, 0.1);
 $blockquote-cite-font-color: rgba(0,0,0,0.6);
 $blockquote-cite-font-size: emCalc(15px);
 

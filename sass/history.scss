@@ -12,20 +12,41 @@
   }
 }
 
+.verseblock {
+  //margin: 0 0.5em $paragraph-margin-bottom 0.5em;
+  margin: 0 1em $paragraph-margin-bottom 1em;
+  pre {
+    font-family: inherit;
+    font-size: 1.15rem;
+    color: $blockquote-font-color;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    strong {
+      font-weight: 400;
+    }
+  }
+
+  .attribution {
+    margin-top: 1.25rem;
+    margin-left: 0.5ex;
+  }
+}
+
 .quoteblock blockquote::before {
   content: '';
   display: none;
 }
 
-.quoteblock {
-  blockquote {
-    color: $body-font-color;
-  }
+.quoteblock, .verseblock {
+  padding: 0 20% 0 3%;
+  border-left: 3px solid rgba(0, 0, 0, 0.3);
 }
 
 .quoteblock.epigraph {
+  border: none;
+  width: 100%;
   padding-left: 30%;
-  blockquote {
+  > blockquote {
     text-align: right;
   }
 }
