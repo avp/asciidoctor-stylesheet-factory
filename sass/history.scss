@@ -1,0 +1,18 @@
+//@import "fonts/asciidoctor";
+@import "settings/asciidoctor";
+@import "components/asciidoc";
+@import "components/awesome-icons";
+
+.quoteblock blockquote::before {
+  content: '';
+  display: none;
+}
+
+.quoteblock.epigraph {
+  padding-left: 30%;
+  blockquote {
+    text-align: right;
+  }
+}
+
+@import "components/print";
