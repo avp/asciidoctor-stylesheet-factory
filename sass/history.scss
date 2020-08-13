@@ -12,6 +12,10 @@
   }
 }
 
+#footer {
+  background: fade-out(#765432, 0.2);
+}
+
 .verseblock {
   //margin: 0 0.5em $paragraph-margin-bottom 0.5em;
   margin: 0 1em $paragraph-margin-bottom 1em;
@@ -38,16 +42,19 @@
 }
 
 .quoteblock, .verseblock {
-  padding: 0 20% 0 3%;
-  border-left: 3px solid rgba(0, 0, 0, 0.3);
+  &:not(.epigraph) {
+    padding: 0 20% 0 3%;
+    border-left: 3px solid rgba(0, 0, 0, 0.3);
+  }
 }
 
 .quoteblock.epigraph {
   border: none;
   width: 100%;
-  padding-left: 30%;
+  padding: 0 40% 0 10%;
   > blockquote {
-    text-align: right;
+    font-size: 1.05rem;
+    text-align: left;
   }
 }
 
