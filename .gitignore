@@ -4,3 +4,6 @@
 /Gemfile.lock
 /node_modules/
 /stylesheets/
+asciidoctor.css
+asciidoctor.min.css
+package-lock.json
